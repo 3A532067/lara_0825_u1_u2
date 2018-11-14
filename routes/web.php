@@ -13,9 +13,18 @@
 
 Route::get('/', function () {
 //    return view('welcome');
-    \App\Post::create([
-        'title'=>'test title',
-        'content'=>'test content',
-    ]);
+
+    
+//    \App\Post::create([
+//        'title'=>'test title',
+//        'content'=>'test content',
+//    ]);
+
+
+    $post =new\App\Post();
+    $post ->title = 'test title';
+    $post ->content = 'test content';
+    $post ->save();
+
 
 });
