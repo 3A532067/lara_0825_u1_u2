@@ -50,7 +50,10 @@ Route::get('/', function () {
 //    $post->save();
 
 
-    $post=\App\Post::find(1);
-    $post->delete();
+//    $post=\App\Post::find(1);
+//    $post->delete();
+
+
+    \App\Post::destroy(2);
 
 });
