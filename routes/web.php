@@ -71,7 +71,7 @@ Route::get('/', function () {
 
     $post=\App\Post::find(12);
     foreach($post->comments as $comment){
-        echo $comment->content.'<br>';
+        echo $comment->title.'<br>';
     }
 
 
